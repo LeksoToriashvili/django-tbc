@@ -1,12 +1,13 @@
 from django.shortcuts import render
 from django.http import HttpResponse, JsonResponse
-
-# Create your views here.
-
-
-def view1(request):
-    return HttpResponse("store view1")
+from store.models import Category, Product
 
 
-def view2(request):
-    return HttpResponse("store view2")
+def categories(request):
+    categories = Category.objects.all()
+    return JsonResponse({'categories': list(categories.values())})
+
+
+def products(request):
+    products = Product.objects.all()
+    return JsonResponse({'products': list(products.values())})
