@@ -14,7 +14,7 @@ def products(request):
 
 
 def category(request):
-    categories = Category.objects.all()
+    categories = Category.objects.filter(parent=None)
     return render(request, 'main_category_listing.html', {'categories': categories})
 
 
