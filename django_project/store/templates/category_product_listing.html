@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>category products</title>
+</head>
+<body>
+
+<h3>Products in {{ category }} category:</h3>
+
+{% for product in products %}
+	<div><p><a href="/store/product/{{ product.id }}">{{ product.name }}</a> - Total_price: {{ product.total_price }}</p></div>
+{% endfor %}
+
+<div>most expensive product price: {{ expensive }}</div>
+<div>most cheap product price: {{ cheap }}</div>
+<div>average product price for this category: {{ avg }}</div>
+<div>total price of the products in this category: {{ total }}</div>
+
+</body>
+</html>
