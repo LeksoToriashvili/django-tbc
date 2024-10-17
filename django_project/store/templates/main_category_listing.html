@@ -2,13 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Main Categories</title>
 </head>
 <body>
 
+<h1>Main Categories:</h1>
+
 {% for category in categories %}
     <div>
-        <a href="{{ category.get_absolute_url }}">id: {{ category.id }} - {{ category.name }}</a>
+        <a href="/store/category/{{ category.id }}/products">id: {{ category.id }} - {{ category.name }}</a>
     </div>
 {% endfor %}
 
