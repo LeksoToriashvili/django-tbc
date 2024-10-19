@@ -25,3 +25,7 @@ Each app contains two basic views, designed to display the app name along with t
 ## Getting Started
 
 To get started with the project, clone the repository and install the necessary dependencies. Then, run the server to explore the functionality of each app.
+
+
+## completed task Custom user model
+added custom user basen on abstractuser class and usercart model.
