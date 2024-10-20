@@ -28,4 +28,5 @@ To get started with the project, clone the repository and install the necessary 
 
 
 ## completed task Custom user model
-added custom user basen on abstractuser class and usercart model.
+added custom user basen on abstractuser class and usercart model.  
+test changes...
